@@ -51,7 +51,7 @@ const OurValue = () => {
 
         {/* Text Section */}
         <motion.div
-          className="w-full lg:w-1/2 text-center lg:text-left z-10"
+          className="w-full lg:w-1/2 text-center lg:text-left z-10 "
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -64,7 +64,7 @@ const OurValue = () => {
           </h1>
 
           {/* Numbered Features */}
-          <div className="grid grid-cols-1 gap-y-6">
+          <div className="grid grid-cols-1 gap-y-6 ">
             <div className="flex items-start space-x-4">
               <span className="bg-primary rounded-full py-2 px-4 text-white text-sm">
                 1
@@ -91,7 +91,7 @@ const OurValue = () => {
                   Safe Environment
                 </h2>
                 <p className="text-gray-700 mt-2">
-                  Your child's safety is our top priority. We provide a
+                  Your childs safety is our top priority. We provide a
                   nurturing and secure environment where children feel
                   comfortable to explore and grow. Our facilities are designed
                   to meet the highest safety standards, ensuring peace of mind
@@ -110,7 +110,7 @@ const OurValue = () => {
                   Our classrooms are equipped with modern educational tools and
                   resources that support a diverse range of learning activities.
                   From interactive technology to creative play materials, we
-                  provide everything needed to enhance your child's educational
+                  provide everything needed to enhance your childs educational
                   experience.
                 </p>
               </div>
