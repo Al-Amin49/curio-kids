@@ -7,7 +7,7 @@ type TContainerProps = {
 };
 const Container = ({ children, className }: TContainerProps) => {
   return (
-    <div className={twMerge("max-w-[1220px] mx-auto", className)}>
+    <div className={twMerge("w-full max-w-[1220px]  mx-auto", className)}>
       {children}
     </div>
   );

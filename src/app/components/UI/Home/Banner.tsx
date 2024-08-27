@@ -77,7 +77,7 @@ const Banner = () => {
             >
               <Image src={child1} alt="Child" />
             </motion.div>
-            <Image src={child2} alt="Child" className="hidden md:block ml-6" />
+            <Image src={child2} alt="Child" className="hidden md:block " />
           </div>
         </div>
       </Container>
