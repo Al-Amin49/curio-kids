@@ -1,15 +1,25 @@
 import { coursesData } from "@/app/constants/data";
 import Container from "../Container";
 import Image from "next/image";
+import back1 from"@/assets/shape/class-shape-1.png";
+import back2 from"@/assets/shape/class-shape-2.png";
 
 const PopularCourses = () => {
   return (
-    <div className="py-10 bg-gray-100">
+    <div className="py-10 bg-background relative overflow-hidden">
+          {/* Background Images */}
+      <div className="absolute -bottom-10 left-0">
+        <Image src={back1} alt="Background Shape 1" className="w-48 h-48 object-contain" />
+      </div>
+      <div className="absolute -bottom-5 right-0">
+        <Image src={back2} alt="Background Shape 2" className="w-48 h-48 object-contain" />
+      </div>
+      
       <h3 className="text-3xl text-center text-primary font-bold mb-8">
-        Popular Classes
+        Popular Courses
       </h3>
       <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
           {coursesData.map((course) => (
             <div
               key={course.id}

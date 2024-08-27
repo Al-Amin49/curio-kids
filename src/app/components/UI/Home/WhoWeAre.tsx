@@ -1,11 +1,15 @@
+"use client"
 import Image from "next/image";
 import Container from "../Container";
 import child from "@/assets/child3.jpg";
+import bannerShape2 from "@/assets/shape/banner-shape-4.png";
+import {motion} from 'framer-motion'
+import { bannerShape } from "./Banner";
 
 const WhoWeAre = () => {
   return (
     <div className="py-10 bg-gray-50">
-      <Container className="flex flex-col lg:flex-row items-center lg:items-start justify-evenly space-y-8 lg:space-y-0 lg:space-x-12">
+      <Container className="flex flex-col lg:flex-row items-center  justify-evenly space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Image Section */}
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
           <Image
@@ -17,9 +21,22 @@ const WhoWeAre = () => {
         
         {/* Text Section */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
-          <h3 className="text-xl text-primary font-semibold mb-2">
+         <div className="flex justify-center items-center">
+         <h3 className="text-xl text-primary font-semibold mb-2">
             Who We Are
           </h3>
+          <motion.div
+              variants={bannerShape}
+              initial="initial"
+              animate="animate"
+            >
+              <Image
+                src={bannerShape2}
+                alt="banner shape"
+                className="w-16 mx-auto lg:mx-0"
+              />
+            </motion.div>
+         </div>
           <h1 className="text-3xl lg:text-4xl text-black font-bold">
             Passionate About Kindergarten Education
           </h1>

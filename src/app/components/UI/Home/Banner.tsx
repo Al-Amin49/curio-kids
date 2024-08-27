@@ -7,7 +7,7 @@ import child2 from "../../../../assets/child2.png";
 import bannerShape1 from "../../../../assets/shape/banner-shape-1.png";
 import backgroundShape from "../../../../assets/shape/banner-bg-shape-1.png";
 
-const bannerShape = {
+export const bannerShape = {
   initial: { x: 0 },
   animate: {
     x: 30,
@@ -26,7 +26,7 @@ const bannerShape = {
 const Banner = () => {
   return (
     <div
-      className="bg-gray-100 "
+      className="bg-background "
       style={{
         backgroundImage: `url(${backgroundShape.src})`,
         backgroundPosition: "bottom center",

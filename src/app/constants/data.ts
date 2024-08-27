@@ -1,7 +1,7 @@
 
-import course1 from "@/assets/courses/course-1.jpg";
+import course3 from "@/assets/courses/course-1.jpg";
 import course2 from "@/assets/courses/course-2.jpg";
-import course3 from "@/assets/courses/course-3.jpg";
+import course1 from "@/assets/courses/course-3.jpg";
 
 export const coursesData=
 
