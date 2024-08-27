@@ -39,7 +39,7 @@ const OurValue = () => {
         <motion.div
           className="w-full lg:w-1/2 flex justify-center lg:justify-start"
           initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           <Image
@@ -53,7 +53,7 @@ const OurValue = () => {
         <motion.div
           className="w-full lg:w-1/2 text-center lg:text-left z-10"
           initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
           <h3 className="text-xl text-primary font-semibold mb-2">

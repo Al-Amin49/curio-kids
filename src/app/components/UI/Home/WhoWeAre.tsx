@@ -13,16 +13,24 @@ const WhoWeAre = () => {
     
       <Container className="flex flex-col lg:flex-row items-center  justify-evenly space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start ">
+        <motion.div
+         initial={{ opacity: 0, x: -50 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         transition={{ duration: 1 }}
+         className="w-full lg:w-1/2 flex justify-center lg:justify-start ">
           <Image
             src={child}
             alt="Child Image"
             className="rounded-lg shadow-lg lg:w-full h-auto "
           />
-        </div>
+        </motion.div>
         
         {/* Text Section */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left">
+        <motion.div 
+         initial={{ opacity: 0, x: 50 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         transition={{ duration: 1 }}
+        className="w-full lg:w-1/2 text-center lg:text-left">
          <div className="flex justify-center items-center">
          <h3 className="text-xl text-primary font-semibold mb-2">
             Who We Are
@@ -78,7 +86,7 @@ const WhoWeAre = () => {
           <div className="text-center mt-8">
           <button className="btn btn-lg ">Read More</button>
           </div>
-        </div>
+        </motion.div>
       </Container>
     </div>
   );
