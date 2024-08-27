@@ -8,10 +8,10 @@ const PopularCourses = () => {
   return (
     <div className="py-10 bg-background relative overflow-hidden">
           {/* Background Images */}
-      <div className="absolute -bottom-10 left-0">
+      <div className="absolute -bottom-20 left-0">
         <Image src={back1} alt="Background Shape 1" className="w-48 h-48 object-contain" />
       </div>
-      <div className="absolute -bottom-5 right-0">
+      <div className="absolute -bottom-10 right-0">
         <Image src={back2} alt="Background Shape 2" className="w-48 h-48 object-contain" />
       </div>
       

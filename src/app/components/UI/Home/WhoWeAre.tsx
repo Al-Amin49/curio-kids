@@ -6,16 +6,18 @@ import bannerShape2 from "@/assets/shape/banner-shape-4.png";
 import {motion} from 'framer-motion'
 import { bannerShape } from "./Banner";
 
+
 const WhoWeAre = () => {
   return (
     <div className="py-10 bg-gray-50">
+    
       <Container className="flex flex-col lg:flex-row items-center  justify-evenly space-y-8 lg:space-y-0 lg:space-x-12">
         {/* Image Section */}
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start ">
           <Image
             src={child}
             alt="Child Image"
-            className="rounded-lg shadow-lg lg:w-full h-auto"
+            className="rounded-lg shadow-lg lg:w-full h-auto "
           />
         </div>
         
@@ -37,7 +39,7 @@ const WhoWeAre = () => {
               />
             </motion.div>
          </div>
-          <h1 className="text-3xl lg:text-4xl text-black font-bold">
+          <h1 className="text-2xl lg:text-3xl text-black font-bold">
             Passionate About Kindergarten Education
           </h1>
           <p className="text-gray-600 my-4 lg:w-[85%] mx-auto lg:mx-0">
@@ -47,7 +49,7 @@ const WhoWeAre = () => {
           </p>
 
           {/* Numbered Features */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:gap-y-6 m-4 lg:m-0">
             <div className="flex items-center space-x-4">
               <span className="bg-primary rounded-full py-2 px-4 text-white text-sm">
                 1
@@ -72,6 +74,9 @@ const WhoWeAre = () => {
               </span>
               <h2 className="font-bold text-black text-lg">Play to Learn</h2>
             </div>
+          </div>
+          <div className="text-center mt-8">
+          <button className="btn btn-lg ">Read More</button>
           </div>
         </div>
       </Container>
