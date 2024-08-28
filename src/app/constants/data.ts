@@ -93,3 +93,37 @@ export const coursesData=
         },
       },
   ]
+
+  export const testimonialData=[
+    {
+      "id": 1,
+      "description": "The learning environment at this school has been phenomenal for my child. The teachers are not only caring but also highly skilled in engaging young minds. My child has developed a love for learning that I haven't seen before. I'm so grateful!",
+      "name": "Emily Johnson",
+      "profession": "Graphic Designer"
+    },
+    {
+      "id": 2,
+      "description": "I was amazed by the progress my child made within just a few months of attending this school. The curriculum is well-rounded, and the emphasis on creativity and critical thinking is exactly what we were looking for. The staff is incredibly supportive and communicative.",
+      "name": "Michael Williams",
+      "profession": "Software Engineer"
+    },
+    {
+      "id": 3,
+      "description": "As a working parent, I appreciate the safe and nurturing environment this school provides. My child looks forward to going to school every day, and it's such a relief to know they're in good hands. The school's approach to learning is truly exceptional.",
+      "name": "Sophia Martinez",
+      "profession": "Marketing Manager"
+    },
+    {
+      "id": 4,
+      "description": "This school has exceeded all our expectations. The teachers go above and beyond to ensure each child feels included and supported. My child's confidence and social skills have improved tremendously since joining the school.",
+      "name": "David Brown",
+      "profession": "Architect"
+    },
+    {
+      "id": 5,
+      "description": "The school has a wonderful community feel, and the staff genuinely cares about each child's development. My child has thrived in this positive environment, and I couldn't be happier with the education they are receiving here.",
+      "name": "Olivia Davis",
+      "profession": "Healthcare Consultant"
+    }
+  ]
+  

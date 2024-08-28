@@ -23,13 +23,16 @@ const Teachers = () => {
               className="relative rounded-lg p-6 flex flex-col items-center text-center "
             >
               {/* Teacher Image */}
-              <div className="relative w-40 h-40 mb-6">
+              <div className="relative w-40 h-40 mb-6"
+              
+              >
                 <Image
                   src={teacher.image}
                   alt={teacher.name}
                   className="rounded-full object-cover w-full h-full"
                   width={260}
                   height={260}
+                 
                 />
                 {/* Social Media Icons */}
                 <div className="absolute inset-0 flex items-center justify-end space-x-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
