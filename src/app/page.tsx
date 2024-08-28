@@ -1,3 +1,4 @@
+import AllBlogs from "./components/UI/Home/AllBlogs";
 import Banner from "./components/UI/Home/Banner";
 import Events from "./components/UI/Home/Events";
 import OurValue from "./components/UI/Home/OurValue";
@@ -17,6 +18,7 @@ export default function Home() {
    <Teachers/>
    <Testimonials/>
    <Events/>
+   <AllBlogs/>
    </div>
   );
 }

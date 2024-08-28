@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear(); 
   return (
     <div
-      className="relative bg-cover bg-center text-white py-16 mt-20 "
+      className="relative bg-cover bg-center text-white py-16  "
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
       }}

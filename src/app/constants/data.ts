@@ -9,6 +9,10 @@ import event1 from "@/assets/event/event-1.png";
 import event2 from "@/assets/event/event-2.png";
 import event3 from "@/assets/event/event-3.png";
 import event4 from "@/assets/event/event-4.png";
+import blog1 from "@/assets/blog/blog-4.jpg";
+import blog2 from "@/assets/blog/blog-3.jpg";
+import blog3 from "@/assets/blog/blog-2.jpg";
+
 
 export const coursesData=
 
@@ -163,4 +167,32 @@ export const coursesData=
       date: "25 September",
       img:event4
     },
+  ]
+
+export const blogData=[
+    {
+      "id": 1,
+      "title": "The Benefits of Creative Play for Children",
+      "description": "Creative play is essential for children's cognitive, emotional, and social development. Explore how Curio Kids promotes creative activities to enhance learning and growth.",
+      "img":blog1,
+      "date": "2024-08-01",
+      "author": "Jane Doe"
+    },
+    {
+      "id": 2,
+      "title": "How to Encourage Healthy Eating Habits in Kids",
+      "description": "Discover practical tips on how to instill healthy eating habits in children. Learn how Curio Kids' programs make nutrition fun and engaging for young learners.",
+      "img": blog2,
+      "date": "2024-08-05",
+      "author": "John Smith"
+    },
+    {
+      "id": 3,
+      "title": "The Importance of Early Childhood Education",
+      "description": "Early childhood education lays the foundation for a child's future success. Find out how Curio Kids is leading the way in providing quality education to young minds.",
+      "img": blog3,
+      "date": "2024-08-10",
+      "author": "Emily Johnson"
+    },
+  
   ]
