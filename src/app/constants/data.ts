@@ -1,4 +1,3 @@
-
 import course3 from "@/assets/courses/course-1.jpg";
 import course2 from "@/assets/courses/course-2.jpg";
 import course1 from "@/assets/courses/course-3.jpg";
@@ -6,6 +5,10 @@ import teacher1 from "@/assets/teachers/teacher-1.jpg";
 import teacher2 from "@/assets/teachers/teacher-2.jpg";
 import teacher3 from "@/assets/teachers/teacher-3.jpg";
 import teacher4 from "@/assets/teachers/teacher-4.jpg";
+import event1 from "@/assets/event/event-1.png";
+import event2 from "@/assets/event/event-2.png";
+import event3 from "@/assets/event/event-3.png";
+import event4 from "@/assets/event/event-4.png";
 
 export const coursesData=
 
@@ -127,3 +130,37 @@ export const coursesData=
     }
   ]
   
+ export const eventsData=[
+    {
+      id: 1,
+      title: "Annual Cultural Programme",
+      time: "8:00 AM - 10:00 PM",
+      location: "New York 56 Glassford Glasgow",
+      date: "12 September",
+      img:event1
+    },
+    {
+      id: 2,
+      title: "World Kids Day",
+      time: "9:00 AM - 5:00 PM",
+      location: "Silicon Valley 500 San Francisco",
+      date: "15 September",
+      img:event2
+    },
+    {
+      id: 3,
+      title: "World Drawing Day",
+      time: "10:00 AM - 8:00 PM",
+      location: "Central Park 79th Street New York",
+      date: "20 September",
+      img:event3
+    },
+    {
+      id: 4,
+      title: "World Teachers Day",
+      time: "9:00 AM - 6:00 PM",
+      location: "Convention Center Plaza ",
+      date: "25 September",
+      img:event4
+    },
+  ]

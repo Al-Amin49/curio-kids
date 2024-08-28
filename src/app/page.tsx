@@ -1,4 +1,5 @@
 import Banner from "./components/UI/Home/Banner";
+import Events from "./components/UI/Home/Events";
 import OurValue from "./components/UI/Home/OurValue";
 import PopularCourses from "./components/UI/Home/PopularCourses";
 import Teachers from "./components/UI/Home/Teachers";
@@ -15,6 +16,7 @@ export default function Home() {
    <OurValue/>
    <Teachers/>
    <Testimonials/>
+   <Events/>
    </div>
   );
 }
