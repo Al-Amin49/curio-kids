@@ -46,10 +46,10 @@ const Navbar = () => {
         {/* Navbar links */}
         <ul className="hidden lg:flex items-center space-x-4 text-black font-semibold">
           <Link href="/">Home</Link>
+          <Link href="/courses">Courses</Link>
           <Link href="/">Instructors</Link>
-          <Link href="/">Events</Link>
           <Link href="/">Blogs</Link>
-          <Link href="/">About</Link>
+          <Link href="/about">About</Link>
           <Link href="/contact-us">
             <button className="btn btn-lg">Contact Us</button>
           </Link>

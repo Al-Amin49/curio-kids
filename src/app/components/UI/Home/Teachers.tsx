@@ -7,7 +7,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 const Teachers = () => {
   return (
     <div
-      className="h-full py-10 mt-40 bg-cover bg-top bg-no-repeat"
+      className="h-full py-10  bg-cover bg-top bg-no-repeat"
       style={{
         backgroundImage: `url(${teacherBg.src})`,
       }}

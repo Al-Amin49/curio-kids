@@ -6,6 +6,7 @@ import child1 from "../../../../assets/child1.png";
 import child2 from "../../../../assets/child2.png";
 import bannerShape1 from "../../../../assets/shape/banner-shape-1.png";
 import backgroundShape from "../../../../assets/shape/banner-bg-shape-1.png";
+import Support from "./Support";
 
 export const bannerShape = {
   initial: { x: 0 },
@@ -81,6 +82,9 @@ const Banner = () => {
           </div>
         </div>
       </Container>
+    <div >
+      <Support/>
+    </div>
     </div>
   );
 };
