@@ -24,7 +24,7 @@ export const coursesData=
         age: "3-5",
         time: "10:00 AM - 11:30 AM",
         seat: 15,
-        price: "$20",
+        price: 20,
         img: course1
       },
       {
@@ -34,7 +34,7 @@ export const coursesData=
         age: "4-6",
         time: "12:00 PM - 1:30 PM",
         seat: 12,
-        price: "$25",
+        price: 25,
         img: course2
       },
       {
@@ -44,7 +44,7 @@ export const coursesData=
         age: "3-5",
         time: "2:00 PM - 3:00 PM",
         seat: 20,
-        price: "$15",
+        price: 15,
         img:course3
       },
     
