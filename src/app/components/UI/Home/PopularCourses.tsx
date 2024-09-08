@@ -6,7 +6,12 @@ import back2 from "@/assets/shape/class-shape-2.png";
 import Link from "next/link";
 import CoursesCard from "../../CoursesCard/CoursesCard";
 
-const PopularCourses = () => {
+const PopularCourses = async() => {
+  const res = await fetch(`http://localhost:8000/courses`, {
+    cache:'no-store'
+  });
+  const courses= await res.json();
+  console.log('data', courses)
   return (
     <div className="py-10 bg-background relative overflow-hidden">
       {/* Background Images */}
@@ -30,7 +35,7 @@ const PopularCourses = () => {
       </h3>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
-          {coursesData.slice(0,3).map((course) => (
+          {courses?.slice(0,3).map((course) => (
             <CoursesCard key={course.id} course={course} />
           ))}
         </div>
