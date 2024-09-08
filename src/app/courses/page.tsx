@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import CourseCover from '../components/UI/Courses/CourseCover';
 import Image from 'next/image';
 import Container from '../components/UI/Container';
@@ -8,18 +8,23 @@ import CoursesCard from '../components/CoursesCard/CoursesCard';
 import Link from 'next/link';
 import back1 from "@/assets/shape/class-shape-1.png";
 import back2 from "@/assets/shape/class-shape-2.png";
+import { Course } from '../types/courses.type';
+
 
 const CoursesPage = () => {
-  const [selectedAge, setSelectedAge] = useState('');
-  const [selectedPrice, setSelectedPrice] = useState('');
+  const [selectedAge, setSelectedAge] = useState<string>('');
+  const [selectedPrice, setSelectedPrice] = useState<number | ''>('');
 
-  const handleAgeFilterChange = (e) => setSelectedAge(e.target.value);
-  const handlePriceFilterChange = (e) => setSelectedPrice(e.target.value);
+  const handleAgeFilterChange = (e:ChangeEvent<HTMLSelectElement>) => setSelectedAge(e.target.value);
+  const handlePriceFilterChange = (e:ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setSelectedPrice(value === '' ? '' : Number(value));
+  };
 
   const filteredCourses = coursesData.filter(course => {
     return (
       (selectedAge ? course.age === selectedAge : true) &&
-      (selectedPrice ? course.price <= selectedPrice : true)
+      (selectedPrice ? course?.price <= selectedPrice : true)
     );
   });
 
@@ -82,7 +87,7 @@ const CoursesPage = () => {
               </h3>
               {filteredCourses.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredCourses.map((course) => (
+                  {filteredCourses.map((course:Course) => (
                     <CoursesCard key={course.id} course={course} />
                   ))}
                 </div>
@@ -91,13 +96,7 @@ const CoursesPage = () => {
                   No courses found matching your criteria.
                 </div>
               )}
-              <div className="text-center mt-10">
-                <Link href="/courses">
-                  <button className="btn btn-lg font-medium bg-primary text-white hover:bg-primary-dark">
-                    View All
-                  </button>
-                </Link>
-              </div>
+             
             </div>
           </div>
         </Container>

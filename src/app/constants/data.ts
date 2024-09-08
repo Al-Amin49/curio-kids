@@ -17,38 +17,107 @@ import blog3 from "@/assets/blog/blog-2.jpg";
 export const coursesData=
 
 [
-    {
-        id: 1,
-        title: "Creative Arts and Crafts",
-        description: "Encourage your child's creativity with our arts and crafts class, where they can explore different materials and techniques.",
-        age: "3-5",
-        time: "10:00 AM - 11:30 AM",
-        seat: 15,
-        price: 20,
-        img: course1
-      },
-      {
-        id: 2,
-        title: "History and Adventures",
-        description: "Take your child on a journey through time with exciting stories and activities that bring history to life.",
-        age: "4-6",
-        time: "12:00 PM - 1:30 PM",
-        seat: 12,
-        price: 25,
-        img: course2
-      },
-      {
-        id: 3,
-        title: "Mathematics Adventures",
-        description: "Join us on a journey through the world of numbers with fun and engaging math activities.",
-        age: "3-5",
-        time: "2:00 PM - 3:00 PM",
-        seat: 20,
-        price: 15,
-        img:course3
-      },
-    
-  ]
+  {
+    "id": 1,
+    "title": "Creative Arts and Crafts",
+    "description": "Encourage your child's creativity with our arts and crafts class, where they can explore different materials and techniques.",
+    "age": "3-5",
+    "time": "10:00 AM - 11:30 AM",
+    "seat": 15,
+    "price": 20,
+    "img": "https://i.ibb.co/nghg8GF/course-1.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 2,
+    "title": "History and Adventures",
+    "description": "Take your child on a journey through time with exciting stories and activities that bring history to life.",
+    "age": "4-6",
+    "time": "12:00 PM - 1:30 PM",
+    "seat": 12,
+    "price": 25,
+    "img": "https://i.ibb.co/cLSmFWT/course-2.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 3,
+    "title": "Mathematics Adventures",
+    "description": "Join us on a journey through the world of numbers with fun and engaging math activities.",
+    "age": "3-5",
+    "time": "2:00 PM - 3:00 PM",
+    "seat": 20,
+    "price": 15,
+    "img": "https://i.ibb.co/GCrg7yM/course-3.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 4,
+    "title": "Science Explorers",
+    "description": "Ignite your child's curiosity with hands-on science experiments and activities.",
+    "age": "5-7",
+    "time": "9:00 AM - 10:30 AM",
+    "seat": 18,
+    "price": 30,
+    "img": "https://i.ibb.co/ggmWjzX/class-9.png",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 5,
+    "title": "Story Time Adventures",
+    "description": "Immerse your child in the magic of storytelling, where they can listen to and create their own stories.",
+    "age": "3-6",
+    "time": "11:00 AM - 12:00 PM",
+    "seat": 25,
+    "price": 10,
+    "img": "https://i.ibb.co/G3L8cWz/class-6.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 6,
+    "title": "Music and Movement",
+    "description": "Let your child explore rhythm and melody through fun music and dance activities.",
+    "age": "4-6",
+    "time": "1:00 PM - 2:30 PM",
+    "seat": 20,
+    "price": 20,
+    "img": "https://i.ibb.co/ZhTvcR9/class-5.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 7,
+    "title": "Nature Explorers",
+    "description": "Introduce your child to the wonders of nature with outdoor adventures and activities.",
+    "age": "5-7",
+    "time": "3:00 PM - 4:30 PM",
+    "seat": 15,
+    "price": 25,
+    "img": "https://i.ibb.co/MDFNndJ/class-4.jpg",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 8,
+    "title": "Building Blocks",
+    "description": "Develop your child's engineering skills with fun building block activities.",
+    "age": "3-5",
+    "time": "10:00 AM - 11:00 AM",
+    "seat": 10,
+    "price": 15,
+    "img": "https://i.ibb.co/gZyr1N0/class-7.png",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  },
+  {
+    "id": 9,
+    "title": "Cooking for Kids",
+    "description": "Teach your child the basics of cooking with simple and fun recipes.",
+    "age": "5-7",
+    "time": "2:00 PM - 3:30 PM",
+    "seat": 8,
+    "price": 30,
+    "img": "https://i.ibb.co/jyw7RTS/class-8.png",
+    "video": "https://cdn.teachertube.com/uploads/videos/2022/09/11/511206/recording__4.mp4"
+  }
+]
+
   
   export const teachersData=[
     {
