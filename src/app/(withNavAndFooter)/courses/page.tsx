@@ -1,15 +1,13 @@
 import React, { ChangeEvent, useState } from "react";
-import Cover from "../components/Cover";
+import Cover from "../../../app/components/Cover";
 import Image from "next/image";
-import Container from "../components/UI/Container";
-import { coursesData } from "../constants/data";
-import CoursesCard from "../components/CoursesCard/CoursesCard";
+import Container from "@/app/components/UI/Container";
 import Link from "next/link";
 import back1 from "@/assets/shape/class-shape-1.png";
 import back2 from "@/assets/shape/class-shape-2.png";
-import { Course } from "../types/courses.type";
-import FilterCourse from "../components/UI/Courses/FilterCourse";
 import banner from "@/assets/courses/page-banner-2.jpg";
+import CoursesCard from "@/app/components/CoursesCard/CoursesCard";
+import { Course } from "@/app/types/courses.type";
 
 const CoursesPage = async () => {
   const res = await fetch(`https://curio-kids-server.vercel.app/courses`, {

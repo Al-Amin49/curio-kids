@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Cover from "../components/Cover";
+import Cover from "../../components/Cover";
 import banner from "@/assets/teachers/page-banner-5.jpg";
-import Container from "../components/UI/Container";
-import { Teacher } from "../types/teachers.type";
+import Container from "../../components/UI/Container";
+import { Teacher } from "../../types/teachers.type";
 
 const TeachersPage = async () => {
   const res = await fetch(`https://curio-kids-server.vercel.app/teachers`, {

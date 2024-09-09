@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
-import { HiMenu, HiX } from "react-icons/hi"; // Importing menu icons
-import { motion } from "framer-motion"; // Importing framer-motion for animations
+import { HiMenu, HiX } from "react-icons/hi"; 
+import { motion } from "framer-motion"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +50,7 @@ const Navbar = () => {
           <Link href="/teachers">Instructors</Link>
           <Link href="/">Blogs</Link>
           <Link href="/about">About</Link>
-          <Link href="/contact-us">
+          <Link href="/login">
             <button className="btn btn-lg">Login</button>
           </Link>
         </ul>
