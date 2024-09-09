@@ -5,11 +5,7 @@ import Image from "next/image";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
  import loginImg from "@/assets/login.jpg";
- import {motion} from 'framer-motion'
-import { bannerShape } from "../components/UI/Home/Banner";
-import bannerShape1 from "@/assets/shape/banner-shape-1.png";
-
-const LoginPage = () => {
+const RegisterPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [agree, setAgree] = useState(false);
 //   const router = useRouter();
@@ -34,24 +30,31 @@ const LoginPage = () => {
       {/* Form Section */}
       <div className="flex flex-col justify-center items-center md:w-1/2 w-full p-8">
         <div className="w-full max-w-md bg-white p-8 rounded shadow-md">
-         <div className="flex items-center space-x-1">
-         <h2 className="text-2xl font-bold text-black">Welcome Back</h2>
-          <motion.div
-              variants={bannerShape}
-              initial="initial"
-              animate="animate"
-            >
-              <Image
-                src={bannerShape1}
-                alt="banner shape"
-                className="w-8 mx-auto lg:mx-0"
-              />
-            </motion.div>
-         </div>
-          <p className="mb-8 text-[#707070]">
-            Enter your credentials to access your account
+         
+         <h2 className="text-xl lg:text-2xl font-bold text-black text-center">Welcome To</h2>
+         <h1 className="text-2xl lg:text-3xl font-bold text-center">
+          <span className="text-primary">C</span>urio{" "}
+          <span className="text-secondary">K</span>ids
+        </h1>
+        
+          <p className="mb-4 text-[#707070] text-center">
+          Sign up to ignite your child’s curiosity
           </p>
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+
+          <div className="flex flex-col">
+              <label htmlFor="email" className="mb-1 text-gray-600">
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                {...register("name", { required: "name is required" })}
+                placeholder="Enter your email"
+                className="p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            
+            </div>
             <div className="flex flex-col">
               <label htmlFor="email" className="mb-1 text-gray-600">
                 Email address
@@ -108,16 +111,16 @@ const LoginPage = () => {
                   : "bg-gray-300 text-gray-500 cursor-not-allowed"
               }`}
             >
-              Sign In
+              Register
             </button>
           </form>
 
         
           <div className="text-center mt-2">
             <p>
-              Dont Have an account?{" "}
-              <a href="/register" className="text-primary font-medium">
-               Register
+              Already Have an account?{" "}
+              <a href="/login" className="text-primary font-medium">
+               Login
               </a>
             </p>
           </div>
@@ -138,4 +141,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default RegisterPage;
