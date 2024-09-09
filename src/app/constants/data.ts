@@ -119,56 +119,93 @@ export const coursesData=
 ]
 
   
-  export const teachersData=[
-    {
-        id: 1,
-        name: "Sarah Johnson",
-        designation: "Math Teacher",
-        image: teacher1,
-        socialLinks: {
-          linkedin: "https://www.linkedin.com/in/sarah-johnson",
-          facebook: "https://www.facebook.com/sarah.johnson",
-          twitter: "https://twitter.com/sarahjohnson",
-          instagram: "https://www.instagram.com/sarahjohnson",
-        },
-      },
-      {
-        id: 2,
-        name: "Michael Brown",
-        designation: "Science Teacher",
-        image:teacher2,
-        socialLinks: {
-          linkedin: "https://www.linkedin.com/in/michael-brown",
-          facebook: "https://www.facebook.com/michael.brown",
-          twitter: "https://twitter.com/michaelbrown",
-          instagram: "https://www.instagram.com/michaelbrown",
-        },
-      },
-      {
-        id: 3,
-        name: "Emily Davis",
-        designation: "English Teacher",
-        image: teacher3,
-        socialLinks: {
-          linkedin: "https://www.linkedin.com/in/emily-davis",
-          facebook: "https://www.facebook.com/emily.davis",
-          twitter: "https://twitter.com/emilydavis",
-          instagram: "https://www.instagram.com/emilydavis",
-        },
-      },
-      {
-        id: 4,
-        name: "David Wilson",
-        designation: "Art Teacher",
-        image: teacher4,
-        socialLinks: {
-          linkedin: "https://www.linkedin.com/in/david-wilson",
-          facebook: "https://www.facebook.com/david.wilson",
-          twitter: "https://twitter.com/davidwilson",
-          instagram: "https://www.instagram.com/davidwilson",
-        },
-      },
-  ]
+export const teachersData = [
+  {
+    id: 1,
+    name: "Sarah Johnson",
+    designation: "Math Teacher",
+    image: "https://i.ibb.co/qY4bYdL/teacher-1.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/sarah-johnson",
+      facebook: "https://www.facebook.com/sarah.johnson",
+      twitter: "https://twitter.com/sarahjohnson",
+      instagram: "https://www.instagram.com/sarahjohnson",
+    },
+    totalClassesTaken: 120,
+    classes: ["Algebra", "Calculus", "Geometry"]
+  },
+  {
+    id: 2,
+    name: "Michael Brown",
+    designation: "Science Teacher",
+    image: "https://i.ibb.co/bQHGBQB/teacher-2.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/michael-brown",
+      facebook: "https://www.facebook.com/michael.brown",
+      twitter: "https://twitter.com/michaelbrown",
+      instagram: "https://www.instagram.com/michaelbrown",
+    },
+    totalClassesTaken: 150,
+    classes: ["Physics", "Chemistry", "Biology"]
+  },
+  {
+    id: 3,
+    name: "Emily Davis",
+    designation: "English Teacher",
+    image: "https://i.ibb.co/jLBKG9L/teacher-3.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/emily-davis",
+      facebook: "https://www.facebook.com/emily.davis",
+      twitter: "https://twitter.com/emilydavis",
+      instagram: "https://www.instagram.com/emilydavis",
+    },
+    totalClassesTaken: 100,
+    classes: ["Literature", "Grammar", "Creative Writing"]
+  },
+  {
+    id: 4,
+    name: "David Wilson",
+    designation: "Art Teacher",
+    image: "https://i.ibb.co/V9JcxKJ/teacher-4.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/david-wilson",
+      facebook: "https://www.facebook.com/david.wilson",
+      twitter: "https://twitter.com/davidwilson",
+      instagram: "https://www.instagram.com/davidwilson",
+    },
+    totalClassesTaken: 80,
+    classes: ["Painting", "Sculpture", "Art History"]
+  },
+  {
+    id: 5,
+    name: "Sophia Martinez",
+    designation: "History Teacher",
+    image: "https://i.ibb.co/kmzpjWm/teacher-5.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/sophia-martinez",
+      facebook: "https://www.facebook.com/sophia.martinez",
+      twitter: "https://twitter.com/sophiamartinez",
+      instagram: "https://www.instagram.com/sophiamartinez",
+    },
+    totalClassesTaken: 130,
+    classes: ["World History", "American History", "Civics"]
+  },
+  {
+    id: 6,
+    name: "James Anderson",
+    designation: "Physical Education Teacher",
+    image: "https://i.ibb.co/VgZNBx4/teacher-6.jpg",
+    socialLinks: {
+      linkedin: "https://www.linkedin.com/in/james-anderson",
+      facebook: "https://www.facebook.com/james.anderson",
+      twitter: "https://twitter.com/jamesanderson",
+      instagram: "https://www.instagram.com/jamesanderson",
+    },
+    totalClassesTaken: 90,
+    classes: ["Fitness", "Yoga", "Team Sports"]
+  }
+];
+
 
   export const testimonialData=[
     {

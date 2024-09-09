@@ -16,7 +16,7 @@ const CoursesCard = ({ course }: TCourseProps) => {
   return (
     <>
       <div
-        key={course.id}
+        key={course._id}
         className="bg-white rounded-lg shadow-lg overflow-hidden relative"
       >
         <div className="relative">

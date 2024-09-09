@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 
 
 export type Course = {
-    id: number;
+    _id: string;
     title: string;
     description: string;
     img: StaticImageData;

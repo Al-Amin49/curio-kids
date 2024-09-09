@@ -17,7 +17,7 @@ const Teachers = () => {
       </h3>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-4 lg:mx-0">
-          {teachersData.map((teacher) => (
+          {teachersData.slice(0,4).map((teacher) => (
             <div
               key={teacher.id}
               className="relative rounded-lg p-6 flex flex-col items-center text-center "
