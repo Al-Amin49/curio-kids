@@ -12,7 +12,7 @@ import FilterCourse from "../components/UI/Courses/FilterCourse";
 import banner from "@/assets/courses/page-banner-2.jpg";
 
 const CoursesPage = async () => {
-  const res = await fetch(`http://localhost:8000/courses`, {
+  const res = await fetch(`https://curio-kids-server.vercel.app/courses`, {
     cache: "no-store",
   });
   const courses = await res.json();
@@ -47,7 +47,7 @@ const CoursesPage = async () => {
           {courses?.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {courses?.map((course: Course) => (
-                <CoursesCard key={course.id} course={course} />
+                <CoursesCard key={course._id} course={course} />
               ))}
             </div>
           ) : (

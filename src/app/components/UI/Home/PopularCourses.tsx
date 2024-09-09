@@ -7,11 +7,11 @@ import Link from "next/link";
 import CoursesCard from "../../CoursesCard/CoursesCard";
 import { Course } from "@/app/types/courses.type";
 
-const PopularCourses = async() => {
-  const res = await fetch(`http://localhost:8000/courses`, {
-    cache:'no-store'
+const PopularCourses = async () => {
+  const res = await fetch(`https://curio-kids-server.vercel.app/courses`, {
+    cache: "no-store",
   });
-  const courses= await res.json();
+  const courses = await res.json();
 
   return (
     <div className="py-10 bg-background relative overflow-hidden">
@@ -36,7 +36,7 @@ const PopularCourses = async() => {
       </h3>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
-          {courses?.slice(0,3).map((course:Course) => (
+          {courses?.slice(0, 3).map((course: Course) => (
             <CoursesCard key={course._id} course={course} />
           ))}
         </div>
