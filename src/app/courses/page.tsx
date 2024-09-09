@@ -41,11 +41,9 @@ const CoursesPage = async () => {
           <h3 className="text-3xl text-center text-primary font-bold mb-8">
             All Courses
           </h3>
-          <div className=" p-4">
-            <FilterCourse courses={courses} />
-          </div>
+
           {courses?.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
               {courses?.map((course: Course) => (
                 <CoursesCard key={course._id} course={course} />
               ))}
