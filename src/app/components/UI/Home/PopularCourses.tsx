@@ -36,7 +36,7 @@ const PopularCourses = async() => {
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
           {courses?.slice(0,3).map((course) => (
-            <CoursesCard key={course.id} course={course} />
+            <CoursesCard key={course._id} course={course} />
           ))}
         </div>
         <div className="text-center mt-10">

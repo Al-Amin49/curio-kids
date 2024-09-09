@@ -1,6 +1,12 @@
 import banner from "@/assets/courses/page-banner-2.jpg";
+import { StaticImageData } from "next/image";
 
-const CourseCover = () => {
+type TCoverProps={
+  banner: StaticImageData,
+  title:string,
+  subTitle:string
+}
+const Cover = ({ banner, title, subTitle }:TCoverProps) => {
   return (
     <div
       className="relative bg-cover bg-center py-20"
@@ -14,14 +20,14 @@ const CourseCover = () => {
       {/* Text content */}
       <div className="relative text-center">
         <h3 className="text-2xl lg:text-3xl text-secondary font-medium">
-          Kids Courses
+          {title}
         </h3>
         <h4 className="text-xl font-bold text-white">
-          Home <span className="text-primary font-medium">|</span> Courses
+          Home <span className="text-primary font-medium">|</span> {subTitle}
         </h4>
       </div>
     </div>
   );
 };
 
-export default CourseCover;
+export default Cover;

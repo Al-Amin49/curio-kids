@@ -47,7 +47,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex items-center space-x-4 text-black font-semibold">
           <Link href="/">Home</Link>
           <Link href="/courses">Courses</Link>
-          <Link href="/">Instructors</Link>
+          <Link href="/teachers">Instructors</Link>
           <Link href="/">Blogs</Link>
           <Link href="/about">About</Link>
           <Link href="/contact-us">
