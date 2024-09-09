@@ -51,7 +51,7 @@ const Navbar = () => {
           <Link href="/">Blogs</Link>
           <Link href="/about">About</Link>
           <Link href="/contact-us">
-            <button className="btn btn-lg">Contact Us</button>
+            <button className="btn btn-lg">Login</button>
           </Link>
         </ul>
 
@@ -67,20 +67,21 @@ const Navbar = () => {
               <Link href="/" onClick={toggleMenu}>Home</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-              <Link href="/" onClick={toggleMenu}>Instructors</Link>
+              <Link href="/courses" onClick={toggleMenu}>Courses</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-              <Link href="/" onClick={toggleMenu}>Events</Link>
+              <Link href="/teachers" onClick={toggleMenu}>Instructors</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
               <Link href="/" onClick={toggleMenu}>Blogs</Link>
             </motion.li>
             <motion.li variants={itemVariants}>
-              <Link href="/" onClick={toggleMenu}>About</Link>
+              <Link href="/" onClick={toggleMenu}>About Us</Link>
             </motion.li>
+          
             <motion.li variants={itemVariants}>
               <Link href="/contact-us" onClick={toggleMenu}>
-                <button className="btn btn-lg">Contact Us</button>
+                <button className="btn btn-lg">Login</button>
               </Link>
             </motion.li>
           </motion.ul>
