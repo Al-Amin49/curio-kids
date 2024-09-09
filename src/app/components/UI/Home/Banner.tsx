@@ -57,10 +57,7 @@ const Banner = () => {
               Empowering Student Knowledge
             </h1>
             <p className="lg:w-[80%] my-4 text-gray-700 mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-              accumsan lacus vel facilisis.
+            At our institution, we believe that education goes beyond the classroom. We are dedicated to creating an environment where students can explore, discover, and thrive.
             </p>
             <div className="flex justify-center lg:justify-start mt-6">
               <button className="btn btn-md lg:btn-lg">Learn More</button>
