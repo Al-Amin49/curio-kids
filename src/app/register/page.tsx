@@ -5,10 +5,11 @@ import Image from "next/image";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
  import loginImg from "@/assets/login.jpg";
+import { useAuth } from "@/lib/AuthProvider";
 const RegisterPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [agree, setAgree] = useState(false);
-//   const router = useRouter();
+  const {register:registerUser}= useAuth();
 
   const {
     register,
@@ -19,10 +20,11 @@ const RegisterPage = () => {
   const onSubmit = (data: any) => {
     console.log("data", data);
     if (agree) {
-      // Call your login function here
-      window.alert("Login successful");
-    //   router.push("/"); // Navigate to home page
-    }
+        registerUser(data.name, data.email, data.password);
+        console.log(data)
+      } else {
+        alert("You must agree to the terms and conditions");
+      }
   };
 
   return (

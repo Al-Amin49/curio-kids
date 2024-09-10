@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { useForm } from "react-hook-form";
@@ -8,11 +8,13 @@ import { useForm } from "react-hook-form";
  import {motion} from 'framer-motion'
 import { bannerShape } from "../components/UI/Home/Banner";
 import bannerShape1 from "@/assets/shape/banner-shape-1.png";
+import { useAuth } from "@/lib/AuthProvider";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [agree, setAgree] = useState(false);
-//   const router = useRouter();
+  const router = useRouter();
+  const {login}= useAuth();
 
   const {
     register,
@@ -23,9 +25,9 @@ const LoginPage = () => {
   const onSubmit = (data: any) => {
     console.log("data", data);
     if (agree) {
-      // Call your login function here
+     login(data.email, data.password)
       window.alert("Login successful");
-    //   router.push("/"); // Navigate to home page
+      router.push("/"); 
     }
   };
 
