@@ -61,9 +61,10 @@ const Navbar = () => {
                 />
                 {dropdownOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                    <p className="block px-4 py-2 text-gray-700">
-                      {user.name} ({user.role})
-                    </p>
+                   <Link href="/dashboard"> 
+                   <p className="block px-4 py-2 text-gray-700">
+                      Dashboard
+                    </p></Link>
                     <button
                       className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                       onClick={() => {
@@ -125,9 +126,10 @@ const Navbar = () => {
               {/* Dropdown menu for large screens */}
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                  <p className="block px-4 py-2 text-gray-700">
-                    {user.name} ({user.role})
-                  </p>
+                 <Link href="/dashboard"> 
+                   <p className="block px-4 py-2 text-gray-700">
+                      Dashboard
+                    </p></Link>
                   <button
                     className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
                     onClick={() => {

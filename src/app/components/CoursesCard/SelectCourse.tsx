@@ -5,7 +5,7 @@ import Swal from "sweetalert2";
 import useAxiosSecure from "../axios/axiosSecure";
 import { useAuth } from "@/lib/AuthProvider";
 
-const SelectCourse = ({ course }) => {
+const SelectCourse = ({ course }: any) => {
   const router = useRouter();
   const axiosSecure = useAxiosSecure();
   const { user } = useAuth();
@@ -22,12 +22,12 @@ const SelectCourse = ({ course }) => {
       }).then(() => {
         router.push("/login");
       });
-      return; 
+      return;
     }
 
     try {
       const response = await axiosSecure.post(
-        "http://localhost:8000/courses/select",
+        "https://curio-kids-eta.vercel.app/courses/select",
         { courseId: course._id }
       );
 
