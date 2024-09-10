@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Course } from "@/app/types/courses.type";
+import SelectCourse from "./SelectCourse";
 
 type TCourseProps = {
   course: Course;
@@ -43,9 +44,7 @@ const CoursesCard = ({ course }: TCourseProps) => {
             <p><strong>Seats:</strong> {course.seat}</p>
           </div>
           <div className="flex space-x-4 mt-4">
-            <button className="btn btn-lg">
-              Select
-            </button>
+            <SelectCourse course={course}/>
             <button
               onClick={openModal}
               className="btn btn-lg bg-secondary text-white"
