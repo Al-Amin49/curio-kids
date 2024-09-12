@@ -9,6 +9,7 @@ import { useForm } from "react-hook-form";
 import { bannerShape } from "../components/UI/Home/Banner";
 import bannerShape1 from "@/assets/shape/banner-shape-1.png";
 import { useAuth } from "@/lib/AuthProvider";
+import { toast } from "sonner";
 
 const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -26,7 +27,7 @@ const LoginPage = () => {
     console.log("data", data);
     if (agree) {
      login(data.email, data.password)
-      window.alert("Login successful");
+      toast.success('Login Successfull');
       router.push("/"); 
     }
   };

@@ -4,6 +4,7 @@ import { createContext, useState, useEffect, useContext, ReactNode } from "react
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import { jwtDecode } from "jwt-decode";
+import { toast } from "sonner";
 
 interface User {
     _id: string;
@@ -118,7 +119,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
       });
 
       if (res.status === 201) {
-        alert("Registration successful! You can now log in.");
+        toast.success("Registration successful! You can now log in.");
         router.push("/login");
       } else {
         alert("Registration failed!");

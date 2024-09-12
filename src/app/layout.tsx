@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <AuthProvider>
-        <Toaster />
+        <Toaster richColors position="top-center" />
           <div className="min-h-screen">
           
             {children}
