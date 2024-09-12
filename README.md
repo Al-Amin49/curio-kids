@@ -37,7 +37,7 @@ npm run dev
 ## Technologies Used
 - **Frontend**: Next.js, React, Tailwind, Framer Motion
 - **Backend**: Express.js, Node.js
-- **Database**: MongoDB, Mongoose
+- **Database**: MongoDB
 - **Authentication**: JWT (JSON Web Tokens)
 
 ## Future Improvements
