@@ -40,14 +40,23 @@ const SelectCourse = ({ course }: any) => {
       }).then(() => {
         router.push("/dashboard/selected-course");
       });
-    } catch (error) {
-      console.error("Error selecting course:", error);
-      Swal.fire({
-        icon: "error",
-        title: "Failed to select the course",
-        text: "Please try again later.",
-        showConfirmButton: true,
-      });
+    } catch (error:any) {
+      if (error.response && error.response.status === 400) {
+        Swal.fire({
+          icon: "info",
+          title: "Course already selected",
+          text: "You have already selected this course.",
+          showConfirmButton: true,
+        });
+      } else {
+        // Handle other errors
+        Swal.fire({
+          icon: "error",
+          title: "Failed to select the course",
+          text: "Please try again later.",
+          showConfirmButton: true,
+        });
+      }
     }
   };
 
