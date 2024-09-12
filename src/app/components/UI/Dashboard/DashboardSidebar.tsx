@@ -32,11 +32,13 @@ const DashboardSidebar = () => {
         </Link>
             {/* Sidebar menu */}
             <ul className="mt-10 space-y-6">
-                <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
+               <Link href="/dashboard">
+               <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
                     <FaHome />
                     <span className={`${isOpen ? "block" : "hidden"} md:block`}>Home</span>
                 </li>
-             <Link href="">
+               </Link>
+             <Link href="/dashboard/selected">
              <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
                     <FaUser />
                     <span className={`${isOpen ? "block" : "hidden"} md:block`}>SelectedClass</span>
