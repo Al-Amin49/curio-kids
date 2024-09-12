@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaBars, FaHome, FaUser, FaCog, FaSignOutAlt } from 'react-icons/fa';
+
+import { FaBars, FaHome, FaUser, FaCog, FaSignOutAlt, FaStore } from 'react-icons/fa';
 import Link from 'next/link';
+import { useAuth } from '@/lib/AuthProvider';
 
 const DashboardSidebar = () => {
+    const {logout}= useAuth()
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -40,17 +42,19 @@ const DashboardSidebar = () => {
                </Link>
              <Link href="/dashboard/selected-course">
              <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
-                    <FaUser />
+                    <FaStore />
                     <span className={`${isOpen ? "block" : "hidden"} md:block`}>SelectedClass</span>
                 </li>
              </Link>
-                <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
+                {/* <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md">
                     <FaCog />
                     <span className={`${isOpen ? "block" : "hidden"} md:block`}>Settings</span>
-                </li>
+                </li> */}
                 <li className="flex items-center space-x-4 cursor-pointer hover:bg-gray-700 p-3 rounded-md mt-auto text-red-400">
                     <FaSignOutAlt />
-                    <span className={`${isOpen ? "block" : "hidden"} md:block`}>Logout</span>
+                    <span className={`${isOpen ? "block" : "hidden"} md:block`} 
+                    onClick={()=>logout()}
+                    >Logout</span>
                 </li>
             </ul>
         </div>
