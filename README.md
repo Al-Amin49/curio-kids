@@ -2,6 +2,31 @@
 
 **Description**: A comprehensive online learning platform built with the MERN stack, featuring user authentication, dynamic course management, and an interactive dashboard for an enhanced learning experience.
 
+**Live Site:** https://winter-wardrobe.netlify.app/
+
+
+### Code Link
+- Client side: https://github.com/Al-Amin49/curio-kids
+
+- Server side: https://github.com/Al-Amin49/curio-kids-server
+
+### Installation and Usage
+1. Clone the repository
+```bash
+git clone https://github.com/Al-Amin49/curio-kids
+
+```
+2. Install Dependencies
+```bash
+cd curio-kids
+npm install
+
+```
+3. Run the server
+```
+npm run dev
+```
+
 ## Key Features
 - **User Authentication**: Secure login and registration process.
 - **Course Management**: View, filter, and select courses.
