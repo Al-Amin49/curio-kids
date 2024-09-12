@@ -2,6 +2,7 @@
 import useAxiosSecure from '@/app/components/axios/axiosSecure';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
+import Swal from 'sweetalert2';
 
 type Course = {
   _id: string;
@@ -28,9 +29,43 @@ const Selectedclasspage = () => {
   };
 
   const handleDelete = (courseId: string) => {
-    // Handle course deletion logic here
-    console.log('Delete course:', courseId);
+    // SweetAlert confirmation dialog
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You won’t be able to revert this!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'Cancel',
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          // Use DELETE method to remove the course
+          await axiosSecure.delete(`/courses/remove/${courseId}`);
+
+          // Update the local state to remove the course
+          setCourses((prevCourses) => 
+            prevCourses.filter((course) => course._id !== courseId)
+          );
+
+          // Show success message
+          Swal.fire('Deleted!', 'Your course has been deleted.', 'success');
+        } catch (error) {
+          console.error('Error deleting course:', error);
+          // Show error message
+          Swal.fire({
+            icon: 'error',
+            title: 'Failed to delete the course',
+            text: 'Please try again later.',
+            showConfirmButton: true,
+          });
+        }
+      }
+    });
   };
+
 
   return (
     <div className="container mx-auto p-4">

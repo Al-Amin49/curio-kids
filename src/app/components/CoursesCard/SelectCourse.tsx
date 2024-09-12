@@ -27,7 +27,7 @@ const SelectCourse = ({ course }: any) => {
 
     try {
       const response = await axiosSecure.post(
-        "https://curio-kids-eta.vercel.app/courses/select",
+        "https://curio-kids-server.vercel.app/courses/select",
         { courseId: course._id }
       );
 
@@ -38,7 +38,7 @@ const SelectCourse = ({ course }: any) => {
         timer: 2000,
         showConfirmButton: false,
       }).then(() => {
-        router.push("/classes");
+        router.push("/dashboard/selected-course");
       });
     } catch (error) {
       console.error("Error selecting course:", error);
