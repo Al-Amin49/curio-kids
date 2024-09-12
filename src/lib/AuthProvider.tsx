@@ -6,7 +6,7 @@ import axios from "axios";
 import { jwtDecode } from "jwt-decode";
 
 interface User {
-    id: string;
+    _id: string;
     name: string;
     email: string;
     role: string;
@@ -89,7 +89,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
 
         // Set the user state with the decoded token data, including role and profilePicture
         setUser({
-          id: decoded.userId,
+          _id: decoded.userId,
           name: decoded.name,
           email: decoded.email,
           role: decoded.role,
