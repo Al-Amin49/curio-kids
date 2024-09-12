@@ -2,7 +2,7 @@
 
 **Description**: A comprehensive online learning platform built with the MERN stack, featuring user authentication, dynamic course management, and an interactive dashboard for an enhanced learning experience.
 
-**Live Site:** https://winter-wardrobe.netlify.app/
+**Live Site:** https://curio-kids-eta.vercel.app
 
 
 ### Code Link
