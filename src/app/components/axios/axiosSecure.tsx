@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 
 
 const axiosSecure = axios.create({
-    baseURL: 'http://localhost:8000'
+    baseURL: 'https://curio-kids-server.vercel.app/'
 })
 const useAxiosSecure = () => {
     const router= useRouter()
