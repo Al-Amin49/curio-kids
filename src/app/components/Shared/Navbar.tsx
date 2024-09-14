@@ -35,6 +35,21 @@ const Navbar = () => {
     hidden: { opacity: 0, x: -20 },
     visible: { opacity: 1, x: 0 },
   };
+ // Function to determine dashboard link based on user role
+ const getDashboardLink = () => {
+  if (!user) return "/login";
+
+  switch (user?.role) {
+    case "admin":
+      return "/dashboard/admin";
+    case "instructor":
+      return "/dashboard/instructor";
+    case "user":
+      return "/dashboard";
+    default:
+      return "/dashboard";
+  }
+};
 
   return (
     <div className="relative z-10">
@@ -61,7 +76,7 @@ const Navbar = () => {
                 />
                 {dropdownOpen && (
                   <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                   <Link href="/dashboard"> 
+                 <Link href={getDashboardLink()}> 
                    <p className="block px-4 py-2 text-gray-700">
                       Dashboard
                     </p></Link>
@@ -126,7 +141,7 @@ const Navbar = () => {
               {/* Dropdown menu for large screens */}
               {dropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2">
-                 <Link href="/dashboard"> 
+                 <Link href={getDashboardLink()}> 
                    <p className="block px-4 py-2 text-gray-700">
                       Dashboard
                     </p></Link>
