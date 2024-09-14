@@ -86,7 +86,7 @@ const AddCoursePage = () => {
           <div className="sm:col-span-2">
             <label className="block font-semibold mb-1">Description</label>
             <textarea
-              className="textarea textarea-bordered w-full border-2 border-black rounded-md"
+              className="textarea textarea-bordered w-full border-2 border-black rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-300 ease-in-out hover:border-primary"
               {...register("description", { required: true })}
               placeholder="Write not more than 100 characters"
             ></textarea>

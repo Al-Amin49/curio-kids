@@ -10,6 +10,7 @@ export type Course = {
     age: string;
     time: string;
     seat: number;
-    video:string
+    video:string,
+    status:string
   };
   
