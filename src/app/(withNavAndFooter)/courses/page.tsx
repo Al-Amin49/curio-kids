@@ -10,7 +10,7 @@ import CoursesCard from "@/app/components/CoursesCard/CoursesCard";
 import { Course } from "@/app/types/courses.type";
 
 const CoursesPage = async () => {
-  const res = await fetch(`https://curio-kids-server.vercel.app/courses`, {
+  const res = await fetch(`https://curio-kids-server.vercel.app/courses/approved`, {
     cache: "no-store",
   });
   const courses = await res.json();

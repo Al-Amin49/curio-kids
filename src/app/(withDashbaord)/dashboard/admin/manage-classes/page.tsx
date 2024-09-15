@@ -5,6 +5,7 @@ import useAxiosPublic from '@/app/components/axios/axiosPublic';
 import useAxiosSecure from '@/app/components/axios/axiosSecure';
 import { Course } from '@/app/types/courses.type';
 import Image from 'next/image';
+import { toast } from 'sonner';
 
 const ManageClasses = () => {
     const axiosPublic= useAxiosPublic();
@@ -41,12 +42,15 @@ const ManageClasses = () => {
 
   // Handle course deletion
   const deleteCourse = async (courseId:string) => {
+    //TODO: Make API for delete course in backend (by default give a message for security)
     try {
       await axios.delete(`/courses/${courseId}`);
       // Remove the deleted course from the local state
       setClasses(prevClasses => prevClasses.filter((course:Course) => course._id !== courseId));
+    
     } catch (error) {
       console.error("Error deleting course:", error);
+      toast.info("Only Superadmin can delete this")
     }
   };
 
