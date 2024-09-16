@@ -29,6 +29,7 @@ const Selectedclasspage = () => {
     // Handle payment logic here
     console.log('Pay for course:', courseId);
   };
+  const totalPrice=courses.reduce((sum, course)=>sum+course.price, 0)
 
   const handleDelete = (courseId: string) => {
     // SweetAlert confirmation dialog
@@ -112,12 +113,6 @@ const Selectedclasspage = () => {
                   </td>
                   <td className="px-4 py-2 border">
                     <button
-                      className="btn btn-lg mr-1 my-2 lg:my-0"
-                      onClick={() => handlePay(course._id)}
-                    >
-                      Pay
-                    </button>
-                    <button
                       className="bg-red-500 text-white px-2 lg:px-4 py-1 lg:py-2 rounded hover:bg-red-600"
                       onClick={() => handleDelete(course._id)}
                     >
@@ -128,6 +123,17 @@ const Selectedclasspage = () => {
               ))}
             </tbody>
           </table>
+
+            {/* Total Price and Checkout Button */}
+            <div className="mt-6 bg-gray-50 p-6 rounded-md shadow-md lg:flex justify-between items-center">
+          <p className="text-2xl font-semibold">Total Price: <span className="text-green-600">${totalPrice.toFixed(2)}</span></p>
+          <button
+           
+            className="btn btn-lg text-white px-6 py-3 rounded-md font-semibold"
+          >
+            Proceed to Checkout
+          </button>
+        </div>
         </div>
       )}
     </div>
