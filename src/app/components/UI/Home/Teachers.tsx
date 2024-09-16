@@ -41,7 +41,7 @@ const Teachers = async () => {
                   height={260}
                 />
                 {/* Social Media Icons */}
-                <div className="absolute inset-0 flex items-center justify-end space-x-4 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 flex items-center justify-end space-x-4 opacity-0 hover:opacity-100  transition-opacity duration-300 animate-pulse ">
                   <a
                     href={teacher.socialLinks.linkedin}
                     target="_blank"
