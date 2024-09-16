@@ -127,12 +127,14 @@ const Selectedclasspage = () => {
             {/* Total Price and Checkout Button */}
             <div className="mt-6 bg-gray-50 p-6 rounded-md shadow-md lg:flex justify-between items-center">
           <p className="text-2xl font-semibold">Total Price: <span className="text-green-600">${totalPrice.toFixed(2)}</span></p>
-          <button
+         <Link href="/dashboard/payment">
+         <button
            
-            className="btn btn-lg text-white px-6 py-3 rounded-md font-semibold"
-          >
-            Proceed to Checkout
-          </button>
+           className="btn btn-lg text-white px-6 py-3 rounded-md font-semibold"
+         >
+           Proceed to Checkout
+         </button>
+         </Link>
         </div>
         </div>
       )}
