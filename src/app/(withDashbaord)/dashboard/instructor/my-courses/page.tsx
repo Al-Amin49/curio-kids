@@ -42,7 +42,7 @@ const MyCoursesPage = () => {
         if (result.isConfirmed) {
           try {
             // Use DELETE method to remove the course
-            await axiosSecure.delete(`/courses/${courseId}`);
+            await axiosSecure.delete(`/courses/remove/${courseId}`);
   
             // Update the local state to remove the course
             setCourses((prevCourses) => 
@@ -54,7 +54,7 @@ const MyCoursesPage = () => {
           } catch (error) {
             console.error('Error deleting course:', error);
             // Show error message
-            toast.info("For security purpose. Only project owner can do this")
+    
           }
         }
       });

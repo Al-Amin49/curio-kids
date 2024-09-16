@@ -5,11 +5,11 @@ import Container from "../../components/UI/Container";
 import { Teacher } from "../../types/teachers.type";
 
 const TeachersPage = async () => {
-  const res = await fetch(`https://curio-kids-server.vercel.app/teachers`, {
+  const res = await fetch(`https://curio-kids-server.vercel.app/instructors`, {
     cache: "no-store",
   });
-  const teachers = await res.json();
-  console.log("teachers", teachers);
+  const instructors = await res.json();
+  console.log("teachers", instructors);
 
   return (
     <div>
@@ -21,7 +21,7 @@ const TeachersPage = async () => {
 
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-4 lg:mx-0 my-20">
-          {teachers.map((teacher: Teacher) => (
+          {instructors.map((teacher: Teacher) => (
             <div
               key={teacher._id}
               className="flex flex-col md:flex-row bg-white shadow-lg overflow-hidden"
@@ -29,7 +29,7 @@ const TeachersPage = async () => {
               {/* Left Side: Image */}
               <div className="md:w-1/3 ">
                 <Image
-                  src={teacher.image}
+                  src={teacher.profilePicture}
                   alt={`${teacher.name}`}
                   width={200}
                   height={200}
@@ -47,11 +47,11 @@ const TeachersPage = async () => {
 
                   <div className="text-gray-600">
                     <p className="font-semibold mb-1">
-                      Classes Taken: {teacher.totalClassesTaken}
+                      Classes Taken: {teacher?.numberOfClasses}
                     </p>
                     <p className="mb-2">
                       <span className="font-semibold">Classes:</span>{" "}
-                      {teacher.classes.join(", ")}
+                      {teacher?.classesTaught?.join(", ")}
                     </p>
                   </div>
                 </div>

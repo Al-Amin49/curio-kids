@@ -74,8 +74,8 @@ export const coursesData=
   },
   {
     "id": 6,
-    "title": "Music and Movement",
-    "description": "Let your child explore rhythm and melody through fun music and dance activities.",
+    "title": "Bangladesh Studies",
+    "description": "Let your child explore rhythm and melody through Bangladesh studies course.",
     "age": "4-6",
     "time": "1:00 PM - 2:30 PM",
     "seat": 20,
