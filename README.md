@@ -19,10 +19,6 @@
   - **Instructor**: Add, manage courses, request approval from Admin.
   - **Admin**: Approve/reject courses, manage users, promote/demote users (Instructor/Admin).
 
-- **Course Management**:
-  - **Students**: Filter, search, select courses, enroll with Stripe payments.
-  - **Instructors**: Add and manage personal courses.
-  - **Admin**: Approve/reject courses, manage all courses and enrollments.
 
 - **Admin Dashboard**: 
   - Full control over course management (approve, reject) and user management (promote, demote).
@@ -33,12 +29,6 @@
 - **Student Dashboard**: 
   - Search, filter, select, and enroll in courses.
   - Pay securely via Stripe and manage enrolled courses.
-
-- **User Management**: 
-  - Admin can promote/demote users (Student, Instructor, Admin).
-
-- **Course Search and Filtering**: 
-  - Filter courses by age, price, and search term to quickly find relevant courses.
 
 - **Responsive Design**: 
   - Fully responsive design across mobile, tablet, and desktop.
