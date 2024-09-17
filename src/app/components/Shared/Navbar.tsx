@@ -102,7 +102,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Navbar links */}
+        {/* Navbar links for lagre screen */}
         <ul className="hidden lg:flex items-center space-x-4 text-black font-semibold">
           <Link href="/">Home</Link>
           <Link href="/courses">Courses</Link>
@@ -132,9 +132,9 @@ const Navbar = () => {
                 />
                 <div className="flex flex-col">
                   <span>{user.name}</span>
-                  <span className="text-sm bg-green-300 rounded-md text-center">
+                 {user.role!=='user' &&<span className="text-sm bg-green-300 rounded-md text-center">
                     {user.role}
-                  </span>
+                  </span>}
                 </div>
               </div>
 
