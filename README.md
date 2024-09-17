@@ -1,6 +1,6 @@
 # Curio Kids - Online Learning System
 
-**Description**: A comprehensive online learning platform built with the MERN stack, featuring user authentication, dynamic course management, and an interactive dashboard for an enhanced learning experience.
+**Description**: A robust online learning platform built with the MERN stack, featuring secure user authentication, role-based access, and dynamic course management. Enhanced with Stripe payments and Framer Motion animations for a seamless, engaging user experience..
 
 **Live Site:** https://curio-kids-eta.vercel.app
 
