@@ -45,7 +45,7 @@ const FilterCourse = ({ courses }: TCourseProps) => {
 
     return (
         <div>
-            <div className="flex justify-center items-center space-x-4">
+            <div className="flex flex-col lg:flex-row justify-center items-center space-x-4">
                 {/* Search input */}
                 <div className="mb-4">
                     <input
