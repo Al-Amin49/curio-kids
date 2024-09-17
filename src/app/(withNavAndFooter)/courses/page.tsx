@@ -8,6 +8,7 @@ import back2 from "@/assets/shape/class-shape-2.png";
 import banner from "@/assets/courses/page-banner-2.jpg";
 import CoursesCard from "@/app/components/CoursesCard/CoursesCard";
 import { Course } from "@/app/types/courses.type";
+import FilterCourse from "@/app/components/UI/Courses/FilterCourse";
 
 const CoursesPage = async () => {
   const res = await fetch(`https://curio-kids-server.vercel.app/courses/approved`, {
@@ -39,7 +40,7 @@ const CoursesPage = async () => {
           <h3 className="text-3xl text-center text-primary font-bold mb-8">
             All Courses
           </h3>
-{/*  .filter((course: Course) => course.status === "approved") */}
+          <FilterCourse courses={courses}/>
           {courses?.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mx-4 lg:mx-0">
               {courses?.map((course: Course) => (
