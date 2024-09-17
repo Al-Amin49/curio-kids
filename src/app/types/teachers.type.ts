@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 export type Teacher ={
     _id: string;
     name: string;
@@ -9,6 +11,7 @@ export type Teacher ={
         twitter: string;
         instagram: string;
     };
-    totalClassesTaken: number;
-    classes: string[];
+    numberOfClasses: number;
+    classesTaught: string[];
+    profilePicture:StaticImageData
 }

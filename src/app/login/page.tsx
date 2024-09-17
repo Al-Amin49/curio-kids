@@ -167,7 +167,7 @@ const LoginPage = () => {
       </div>
          {/* Modal for Demo Account Selection */}
          {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center mx-4 lg:mx-0">
           <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full">
             <h3 className="text-lg font-bold mb-4">Select a Demo Account</h3>
             <div className="space-y-2">

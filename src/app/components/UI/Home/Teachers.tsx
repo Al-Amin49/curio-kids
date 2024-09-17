@@ -8,6 +8,7 @@ import {
   FaLinkedinIn,
   FaInstagram,
 } from "react-icons/fa";
+import { Teacher } from "@/app/types/teachers.type";
 
 const Teachers = async () => {
   const res = await fetch(`https://curio-kids-server.vercel.app/instructors`, {
@@ -26,7 +27,7 @@ const Teachers = async () => {
       </h3>
       <Container>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mx-4 lg:mx-0">
-          {instructors.slice(0, 4).map((teacher) => (
+          {instructors.slice(0, 4).map((teacher:Teacher) => (
             <div
               key={teacher._id}
               className="relative rounded-lg p-6 flex flex-col items-center text-center "
